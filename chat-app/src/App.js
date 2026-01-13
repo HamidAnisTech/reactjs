@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useEffect ,useContext} from 'react';
+import RefComponent from './components/ref-component';
+import context from './context/context';
 
 function App() {
+
+
+  const ctx = useContext(context);
+
+  console.log(ctx);
   return (
-    <div className="App">
-     <h1>Hello Ati</h1>
-    </div>
+   <div>
+    <RefComponent></RefComponent>
+   </div>
   );
 }
 
